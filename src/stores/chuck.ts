@@ -8,6 +8,7 @@ export const useChuckStore = defineStore('chuck', () => {
   const cards = ref<ChuckModel[]>([])
 
   async function getCards(search?: string) {
+    
     const res = await api.chuck.get(search)
     cards.value = res.result
   }

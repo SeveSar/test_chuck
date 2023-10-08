@@ -3,7 +3,6 @@
     <div class="chuck-card__value">
       {{ item.value }}
     </div>
-    <img :src="item.icon_url" alt="" />
     <div class="chuck-card__footer">
       <div class="chuck-card__id">
         {{ item.id }}
